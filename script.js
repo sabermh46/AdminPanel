@@ -17,32 +17,21 @@ function profileToggle() {
 proClosed.addEventListener("click", profileToggle());
 profileToggle();
 
+        var elems = document.getElementsByClassName("btn-link");
 
-
-        let getSiblings = function (e) {
-            // for collecting siblings
-            let siblings = []; 
-            // if no parent, return no sibling
-            if(!e.parentNode) {
-                return siblings;
-            }
-            // first child of the parent node
-            let sibling  = e.parentNode.firstChild;
-            // collecting siblings
-            while (sibling) {
-                if (sibling.nodeType === 1 && sibling !== e) {
-                    siblings.push(sibling);
+        for (var i = 0; i < elems.length; i++){
+        elems[i].addEventListener('click', function(){
+            this.classList.toggle('menu-active');
+            
+            for (var i = 0; i < elems.length; i++){
+                if(elems[i] == this)
+                {
+                    continue;
                 }
-                sibling = sibling.nextSibling;
+                else
+                {
+                    elems[i].classList.remove('menu-active');
+                }
             }
-            return siblings;
-        };
-
-        let siblings = getSiblings(document.querySelector('.btn-link'));
-        console.log(siblings);
-
-        const btn = document.querySelectorAll('btn-link');
-
-        btn.addEventListener('click', function(){
-            btn.classList.toggle('menu-active');
-        });
+        })
+        }
