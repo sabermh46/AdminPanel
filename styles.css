@@ -181,14 +181,65 @@ body {
 .sidePanel {
     position: sticky;
     top: 90px;
-    width: 25%;
-    background: cyan;
+    width: 30%;
+    background: #949398FF;
     height: 500px;
     border-radius: 5px;
     margin-right: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274)
 
 }
+    .sidePanelBrand {
+        height: 70px;
+        background: cornflowerblue;
+        border-radius: 5px 5px 0 0;
+        color: white;
+        font-size: 30px;
+    }
+    .buttons {
+        color: #F4DF4EFF;
+    }
+        .menu {
+
+        }
+            .btn-link {
+            }
+                .menu li a {
+                    display: block;
+                    text-decoration: none;
+                    color: #F4DF4EFF;
+                    height: 50px;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 50px;
+                    cursor: pointer;
+                    position: relative;
+                    transition: all 0.5s;
+                    border-left: 5px solid #F4DF4EFF;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+                }
+                .menu li a:hover {
+                    background: rgb(124, 123, 126);
+                }
+                .btn-link .sub-menu {
+                    height: 0;
+                    overflow-y: hidden;
+                    transition: all 0.5s;
+                }
+                .menu-active {
+                    height: auto;
+                    overflow-y: hidden;
+                }
+                
+                .btn-link .sub-menu li {
+                    list-style: none;
+                    font-size: 16px;
+                    height: 40px;
+                    text-align: right;
+                    line-height: 40px;
+                    padding: 5px;
+                    transition: 0.5s;
+                }
 
 .contentPanel {
     width: 100%;
