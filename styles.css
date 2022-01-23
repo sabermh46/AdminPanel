@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -27,8 +28,127 @@ body {
     border-radius: 5px;
     background: rgb(30, 155, 228);
     margin-bottom: 10px;
-    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274)
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: space-between;
 }
+    .brand {
+        height: 100%;
+        background: rgb(42, 120, 209);
+        padding: 10px 20px;
+        font-size: 2em;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .brand:hover {
+        background: rgb(21, 106, 202);
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.493);
+        color:rgb(236, 238, 96)
+    }
+    .links {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-right: 10px;
+        max-width: 300px;
+        border: 1px solid red;
+    }
+        .link1 {
+            height: 70%;
+            width: 100px;
+            background: rgb(105, 96, 231);
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .link1:hover {
+            background: rgb(82, 75, 182);
+            color:rgb(177, 248, 195)
+        }
+        .profile {
+            height: 70%;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background: rgb(105, 96, 231);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .profile:hover {
+            background: rgb(82, 75, 182);
+            color:rgb(177, 248, 195)
+        }
+        .proClicked {
+            height: 300px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            background: rgb(105, 96, 231);
+            cursor: auto;
+            transform: translate(0, 195px);
+        }
+            .inNav {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 5px;
+            }
+            .iNClicked {
+                height: 60%;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid white;
+            }
+                .userPic {
+                    height: 100%;
+                    aspect-ratio: 1;
+                }
+                .uPClicked {
+                    height: 80%;
+                    border: 1px solid white;
+                }
+                    .userPic img {
+                        height: 100%;
+                        aspect-ratio: 1;
+                        border-radius: 50%;
+                    }
+                .userName {
+                    color: white;
+                    border: 1px solid white;
+                    height: 20%;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .uNClicked {
+                    color:rgb(198, 255, 255)
+                }
+            .outNav
+            {
+                height: 0%;
+                color: white;
+                font-size: 18px;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            .oNClicked {
+                height: 40%;
+                padding: 5px;
+                visibility: visible;
+                border: 1px solid white;
+            }
 
 .secondBody {
     display: flex;
@@ -41,7 +161,7 @@ body {
     top: 90px;
     width: 25%;
     background: cyan;
-    height: 300px;
+    height: 500px;
     border-radius: 5px;
     margin-right: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274)
@@ -51,8 +171,24 @@ body {
 .contentPanel {
     width: 100%;
     background: darkorange;
-    height: 300px;
+    height: 500px;
     border-radius: 5px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274)
+}
 
+
+
+
+
+
+
+
+
+
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
