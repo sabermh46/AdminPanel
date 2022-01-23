@@ -41,9 +41,8 @@ profileToggle();
         let siblings = getSiblings(document.querySelector('.btn-link'));
         console.log(siblings);
 
-        const btn = document.querySelector('.btn-link');
-        const sub = document.querySelector('.sub-menu');
+        const btn = document.querySelectorAll('btn-link');
 
         btn.addEventListener('click', function(){
-            sub.classList.toggle('menu-active');
+            btn.classList.toggle('menu-active');
         });

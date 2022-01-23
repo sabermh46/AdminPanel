@@ -203,7 +203,11 @@ body {
 
         }
             .btn-link {
+                height: 50px;
+                overflow-y: hidden;
+                transition: 0.5s;
             }
+            
                 .menu li a {
                     display: block;
                     text-decoration: none;
@@ -219,16 +223,17 @@ body {
                     border-bottom: 1px solid rgba(0, 0, 0, 0.349);
                 }
                 .menu li a:hover {
-                    background: rgb(124, 123, 126);
+                    background: rgb(129, 129, 133);
                 }
                 .btn-link .sub-menu {
-                    height: 0;
                     overflow-y: hidden;
                     transition: all 0.5s;
                 }
+                .btn-link:hover > .sub-menu {
+                    height: auto;
+                }
                 .menu-active {
                     height: auto;
-                    overflow-y: hidden;
                 }
                 
                 .btn-link .sub-menu li {
