@@ -18,8 +18,10 @@ body {
 }
 
 .adminNav {
+    position: sticky;
+    top: 10px;
     width: 100%;
-    height: 50px;
+    height: 70px;
     border-radius: 5px;
     background: rgb(30, 155, 228);
     margin-bottom: 10px;
@@ -28,18 +30,21 @@ body {
 .secondBody {
     display: flex;
     justify-content: space-between;
-
+    height: 1000px;
 }
 
 .sidePanel {
-    width: 30%;
+    position: sticky;
+    top: 90px;
+    width: 25%;
     background: cyan;
     height: 300px;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 .contentPanel {
-    width: 69%;
+    width: 100%;
     background: darkorange;
     height: 300px;
     border-radius: 5px;
