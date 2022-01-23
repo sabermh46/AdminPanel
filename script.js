@@ -6,8 +6,6 @@ const userName = document.getElementById('userName');
 const outNav = document.getElementById('outNav');
 const proClosed = document.getElementById('proClosed');
 
-proClosed.addEventListener('click', profileToggle());
-
 function profileToggle() {
     profile.classList.toggle('proClicked');
     inNav.classList.toggle('iNClicked');
@@ -16,3 +14,5 @@ function profileToggle() {
     outNav.classList.toggle('oNClicked');
     proClosed.classList.toggle('pCClicked');
 }
+proClosed.addEventListener("click", profileToggle());
+profileToggle();
