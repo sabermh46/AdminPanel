@@ -182,12 +182,11 @@ body {
     position: sticky;
     top: 90px;
     width: 30%;
-    background: #949398FF;
     height: 500px;
     border-radius: 5px;
     margin-right: 10px;
-    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274)
-
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.274);
+    background: rgb(88, 88, 88);
 }
     .sidePanelBrand {
         height: 70px;
@@ -199,12 +198,10 @@ body {
     .buttons {
         color: #F4DF4EFF;
     }
-        .menu {
-
-        }
             .btn-link {
                 height: 50px;
                 overflow-y: hidden;
+                background: #949398FF;
                 transition: 0.5s;
             }
             
@@ -229,9 +226,6 @@ body {
                     overflow-y: hidden;
                     transition: all 0.5s;
                 }
-                .btn-link:hover > .sub-menu {
-                    height: auto;
-                }
                 .menu-active {
                     height: auto;
                 }
@@ -244,6 +238,10 @@ body {
                     line-height: 40px;
                     padding: 5px;
                     transition: 0.5s;
+                }
+                .btn-link .sub-menu li:hover {
+                    background: #F4DF4EFF;
+                    color: #949398FF;
                 }
 
 .contentPanel {
